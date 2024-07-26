@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="RESOURCES/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <header>
+            <div class="logo">
+                <img src="IMAGES/pexels-tomaz-barcellos-1980984.jpg" alt="picture" class="logo2">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="login.html"><button>Login</button></a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <li class="list"><a href="login.html">Home</a></li>
+                <li class="list"><a href="#">Contacts</a></li>
+                <li class="list"><a href="">Services</a></li>
+                <li class="list"><a href="#">About Us</a></li>
+                <li class="compulsory"><a href="register.html"><button>Sign Up</button></a></li>
+            </div>
+            <div class="dropdown_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <form action="">
+                <div class="registerdiv">
+                    <h1>Register</h1>
+                </div>
+                <fieldset>
+                    <legend><b>Personal Details</b></legend>
+                    <div class="personalinfo">
+                        <div class="fullname">
+                            <label for="fullname">Fullname: </label>
+                            <input type="text" name="fullname" id="fullname" required>
+                        </div>
+                        <div class="dob">
+                            <label for="dob">Date of Birth: </label>
+                            <input type="date" name="dob" id="dob" required min="2006-01-01">
+                        </div>
+                        <div class="gender">
+                            <label for="gender">Gender: </label>
+                            <select name="gender" id="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Phone Number: </label>
+                            <select name="code" id="code">
+                                <option value="+456">+456</option>
+                                <option value="+543">+543</option>
+                                <option value="+442">+442</option>
+                                <option value="+898">+898</option>
+                                <option value="+233">+233</option>
+                                <option value="+403">+403</option>
+                                <option value="+234">+234</option>
+                                <option value="+236">+236</option>
+                            </select>
+                            <input type="tel" name="phone" id="phone" required min="10">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email address: </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- address section -->
+                <fieldset>
+                    <legend><b>Address</b></legend>
+                    <div class="address">
+                        <label for="address">Home Address: </label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div class="postalcode">
+                        <label for="postal">Postal Code: </label>
+                        <input type="tel" name="postal" id="postal" min="6" max="6" required>
+                    </div>
+                    <div class="city">
+                        <label for="city">City: </label>
+                        <select name="city" id="city">
+                            <option value="lagos">lagos</option>
+                            <option value="Port Harcourt">Port Harcourt</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Awka Ibom">Awka Ibom</option>
+                            <option value="Anambra">lagos</option>
+                            <option value="lagos">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross-River">Cross-River</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Kwara">Kwara</option>
+
+                        </select>
+                    </div>
+                </fieldset>
+                <button type="submit">Sign Up</button>
+
+
+
+            </form>
+        </div>
+    </section>
+    <script src="RESOURCES/javascript/all.min.js"></script>
+</body>
+
+</html>

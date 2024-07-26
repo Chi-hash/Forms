@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <header>
+            <div class="logo">
+                <img src="IMAGES/pexels-tomaz-barcellos-1980984.jpg" alt="picture" class="logo2">
+            </div>
+            <nav>
+                <ul>
+                    <li class="list"><a href="login.html">Home</a></li>
+                    <li class="list"><a href="#">Contacts</a></li>
+                    <li class="list"><a href="">Services</a></li>
+                    <li class="list"><a href="#">About Us</a></li>
+                    <li class="compulsory"><a href="register.html"><button>Sign Up</button></a></li>
+                </ul>
+            </nav>
+
+            <div class="dropdown">
+                <li class="list"><a href="login.html">Home</a></li>
+                <li class="list"><a href="#">Contacts</a></li>
+                <li class="list"><a href="">Services</a></li>
+                <li class="list"><a href="#">About Us</a></li>
+                <li class="compulsory"><a href="register.html"><button>Sign Up</button></a></li>
+            </div>
+            <div class="dropdown_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </section>
+
+
+    <section id="loginpage">
+        <div class="container">
+            <form action="">
+                <div class="login">
+                    <h1>Login</h1>
+                </div>
+                <div class="fathernamepass">
+                    <div class="usernamepassword">
+                        <input type="text" name="username" placeholder="Username" required class="text">
+                        <i class="fas fa-user     "></i>
+                    </div>
+                    <div class="usernamepassword">
+                        <input type="password" name="password" id="password" placeholder="password" class="text"
+                            minlength="10" maxlength="20" required>
+                        <i class="fas fa-lock    "></i>
+                    </div>
+                </div>
+
+
+                <div class="rememberforgot">
+                    <label for="remember"><input type="checkbox" name="remember" id="remember"> Remember Me</label>
+                    <a href="">Forgot Password</a>
+                </div>
+                <!-- submit login button -->
+                <div class="submit">
+                    <button type="submit">Log In</button>
+                </div>
+                <div class="noaccount">
+                    <p>Don't have an account?<b><a href="register.html">SignUp</a></b></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="RESOURCES/javascript/all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(savedWallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#loginpage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#register {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+
+}
+
+header {
+    padding: 20px;
+}
+
+#header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#header header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    backdrop-filter: blur(30px);
+}
+
+#header .logo {
+    margin-left: 20px;
+}
+
+#header .logo .logo2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* background-color: rgba(9, 78, 224, 0.63);
+    background-blend-mode: multiply; */
+    filter: hue-rotate(210deg) brightness(1.1) contrast(1.1);
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#header nav ul li {
+    margin-right: 20px;
+}
+
+#header nav ul .li a:hover {
+    color: black;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
+    animation-name: testing;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes testing {
+    0% {
+        border-bottom: 1px solid transparent;
+        width: 0;
+    }
+
+    100% {
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+}
+
+#header nav ul button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+}
+
+#header nav ul button:hover {
+    color: white;
+    background: black;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a:hover {
+    color: black;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
+}
+
+.dropdown li:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.dropdown button {
+    padding: 5px;
+    border-radius: 115px;
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+
+.dropdown button:hover {
+    color: white;
+    background-color: black;
+}
+
+.dropdown {
+    position: absolute;
+    right: 18px;
+    top: 60px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+
+/* RESPPONSIVE SIDE */
+@media screen and (max-width: 600px) {
+    #header nav li {
+        display: none;
+    }
+
+    #header .dropdown {
+        display: none;
+    }
+
+
+
+
+    #loginpage .container {
+        margin-top: 150px;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    #header header .dropdown_icon {
+        display: none;
+    }
+
+    #header .dropdown {
+        display: none;
+    }
+
+}
+
+
+#loginpage .container form .login h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+
+#loginpage .container form {
+    width: 100%;
+}
+
+#loginpage .container .fathernamepass {
+    padding: 0px 30px;
+}
+
+#loginpage .container .usernamepassword {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    height: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 0px;
+    border: 1px solid white;
+
+}
+
+#loginpage .container .usernamepassword .text {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+#loginpage .container .usernamepassword .text::placeholder {
+    color: white;
+}
+
+#loginpage .container form .submit {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+#loginpage .container form .submit button {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+#loginpage .container form .submit button:hover {
+    color: white;
+    background-color: black;
+
+}
+
+
+#loginpage .container form .rememberforgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    margin-top: 20px;
+}
+
+#loginpage .container form .rememberforgot input {
+    color: brown;
+    background-color: aqua;
+}
+
+
+#loginpage .container form .rememberforgot a:hover {
+    color: black;
+}
+
+#loginpage .container form .noaccount a {
+    color: black;
+}
+
+#loginpage .container form .noaccount {
+    display: flex;
+    justify-content: center;
+    margin: 20px 30px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+#loginpage .container form .noaccount a:hover {
+    color: white;
+}
+
+
+/* register page */
+#register {}
+
+#register .container {
+    width: 550px;
+    padding: 20px;
+    margin: 40px;
+}
+
+@media screen and (max-width:600px) {
+    #register .container {
+        padding: 10px;
+    }
+
+    #register {
+        margin-top: 150px;
+    }
+}
+
+#register .container .registerdiv h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#register .container form {
+    width: 100%;
+}
+
+#register .container form legend {
+    font-size: 28px;
+    color: white;
+    padding: 10px;
+}
+
+#register .container .fullname,
+#register .container .dob,
+#register .container .phone,
+#register .container .email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#register .container .fullname label {
+    margin-right: 20px;
+}
+
+#register .container .gender {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#register .container .gender select {
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#register .container .phone select,
+#register .container .city select {
+    padding: 7px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#register .container .city label {
+    margin-right: 10px;
+}
+
+#register .container .gender select:hover,
+#register .container .phone select:hover,
+#register .container .city select:hover {
+    background-color: white;
+    color: black;
+}
+
+#register .container .city {
+    margin-top: 20px;
+}
+
+#register .container form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#register .container form input:hover {
+    border: 1px solid black;
+}
+
+#register .container form input::placeholder:hover {
+    color: black;
+}
+
+#register .container form fieldset {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 255, 0.233);
+}
+
+/*  adrress section */
+#register .container form .address {
+    margin-bottom: 20px;
+}
+
+
+#register .container form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+#register .container form button:hover {
+    color: white;
+    background-color: black;
+}
+
+.address label {
+    margin-bottom: 20px;
+}
